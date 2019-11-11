@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="380141fe-d1d5-44af-9dbc-0f54d4c0eb47" name="Default Changelist" comment="" />
+    <list default="true" id="2c4ec48c-c80b-4f3e-8b7d-80a6169bfa4d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kundenverwaltung: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kundenverwaltung: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="address: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kundenverwaltung: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="contact: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kundenverwaltung: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="costumer: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -23,27 +75,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1TNM74Dg9JNAOA0DQB9NEvQSjIH" />
+  <component name="ProjectId" id="1Syn4nJqFspEpAGwolYs3hykLb3" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
-  </component>
-  <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="com.kuerschner.kundendatenbank.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\retor\IdeaProjects\slaModul226\kundenverwaltung\src\main\resources" />
-    </key>
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,46 +103,51 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="KundenWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="kundenverwaltung" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kuerschner.kundendatenbank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kuerschner.kundendatenbank.KundenWebApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="LocationWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="location" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bharath.location.LocationWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="kundenverwaltung" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kuerschner.kundendatenbank.KundenWebApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.KundenWebApplication" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d34a1821" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="380141fe-d1d5-44af-9dbc-0f54d4c0eb47" name="Default Changelist" comment="" />
-      <created>1573295928168</created>
+      <changelist id="2c4ec48c-c80b-4f3e-8b7d-80a6169bfa4d" name="Default Changelist" comment="" />
+      <created>1572544515027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573295928168</updated>
-      <workItem from="1573295931981" duration="964000" />
-      <workItem from="1573380277514" duration="6042000" />
+      <updated>1572544515027</updated>
+      <workItem from="1572544519753" duration="6836000" />
+      <workItem from="1572680626427" duration="6577000" />
+      <workItem from="1573149952845" duration="4919000" />
+      <workItem from="1573160337463" duration="654000" />
+      <workItem from="1573242531022" duration="1854000" />
+      <workItem from="1573285633609" duration="9154000" />
+      <workItem from="1573302634964" duration="56000" />
+      <workItem from="1573380311260" duration="8033000" />
+      <workItem from="1573399500968" duration="5478000" />
+      <workItem from="1573495807033" duration="2375000" />
+      <workItem from="1573499661367" duration="2261000" />
+      <workItem from="1573502097847" duration="5533000" />
     </task>
     <servers />
   </component>
