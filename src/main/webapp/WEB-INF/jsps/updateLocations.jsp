@@ -5,16 +5,35 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Update Customer</title>
+    <title>Create Customer</title>
 </head>
 <body>
-<form action="updateLoc" method="POST">
+<form action="saveLoc" method="POST">
     <pre>
-        Id: <input type="text" name="id" value="${costumer.id}" readonly/>
-        Firstname: <input type="text" name="firstName" value="${costumer.firstName}"/>
+        Fistname: <input type="text" name="firstName" value="${costumer.firstName}"/>
         Lastname: <input type="text" name="lastName" value="${costumer.lastName}"/>
+        Street: <input type="text" name="street" value="${address.street}"/>
+        Number: <input type="text" name="number" value="${address.number}"/>
+        PLZ: <input type="text" name="plz" value="${address.plz}"/>
+        City: <input type="text" name="city" value="${address.city}"/>
+        Businessname: <input type="text" name="businessname" value="${contact.businessname}"/>
+        Value: <input type="text" name="value" value="${contact.value}"/>
+         Type: <select name="sort">
+              <option value="privatePhone">privatePhone</option>
+              <option value="businessPhone">businessPhone</option>
+              <option value="mobile">mobile</option>
+              <option value="fax">fax</option>
+              <option value="email">email</option>
+          </select>
+          Sort:  <select name="type">
+              <option value="PRIVATE">PRIVATE</option>
+              <option value="BUSINESS">BUSINESS</option>
+          </select>
         <input type="submit" value="save"/>
     </pre>
 </form>
+${msg}
+
+<a href="displayLocations">View All</a>
 </body>
 </html>

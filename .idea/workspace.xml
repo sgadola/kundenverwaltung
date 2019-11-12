@@ -118,7 +118,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d34a1821" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d45d8bee" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d45d8bee" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@a98dca9" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -148,6 +153,9 @@
       <workItem from="1573495807033" duration="2375000" />
       <workItem from="1573499661367" duration="2261000" />
       <workItem from="1573502097847" duration="5533000" />
+      <workItem from="1573581494694" duration="6778000" />
+      <workItem from="1573589131954" duration="7856000" />
+      <workItem from="1573597044174" duration="2555000" />
     </task>
     <servers />
   </component>

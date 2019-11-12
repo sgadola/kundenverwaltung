@@ -39,27 +39,26 @@ public class LocationController {
     }
 
     @RequestMapping("/displayLocations")
-    public String displayLocations(ModelMap modelMap){
-        List<Costumer> costumers = service.getAllLocations();
-        modelMap.addAttribute("costumers", costumers);
-        return "displayLocations";
+    public String displayLocations(){
+        return "testjoin";
     }
 
     @RequestMapping("deleteLocations")
     public String deleteLocation(@RequestParam("id") long id, ModelMap modelMap){
-        //Costumer costumer = service.getLocationById(id);
-        Costumer costumer = new Costumer();
+        Costumer costumer = service.getLocationById(id);
         costumer.setId(id);
         service.deleteLocation(costumer);
-        List<Costumer> costumers = service.getAllLocations();
-        modelMap.addAttribute("costumers", costumers);
-        return "displayLocations";
+        return "testjoin";
     }
 
     @RequestMapping("/showUpdate")
-    public String showUpdate(@RequestParam("id") long id, ModelMap modelMap) {
-        Costumer costumer = service.getLocationById(id);
+    public String showUpdate(@RequestParam("id")long id, ModelMap modelMap, ModelMap modelMap1, ModelMap modelMap2) {
+        Contact contact = service.getContactById(id);
+        Address address = service.getAddressById(contact.getFkcostumer());
+        Costumer costumer = service.getLocationById(address.getFkCostumer());
         modelMap.addAttribute("costumer", costumer);
+        modelMap1.addAttribute("contact", contact);
+        modelMap2.addAttribute("address", address);
         return "updateLocations";
     }
 

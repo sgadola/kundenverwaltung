@@ -1,7 +1,8 @@
 <%@page language="java" contentType="text/html; chatset=UTF-8" pageEncoding="utf-8" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@page isELIgnored="false" %>
-
+<%@ page import="java.sql.*" %>
+<%@ page import="java.io.*" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,25 +13,32 @@
     <title>Document</title>
 </head>
 <body>
-
 <h2>Customer:</h2>
 <table>
     <tr>
         <th>id</th>
         <th>firstname</th>
         <th>lastname</th>
+        <th>businessname</th>
     </tr>
 
     <c:forEach items="${costumers}" var="costumer">
-        <tr>
-            <td>${costumer.id} |</td>
-            <td>${costumer.firstName} |</td>
-            <td>${costumer.lastName} |</td>
-            <td><a href="showUpdate?id=${costumer.id}">update |</a></td>
-            <td><a href="deleteLocations?id=${costumer.id}">delete</a></td>
-        </tr>
+
     </c:forEach>
+    <%while (true){ %>
+    items="${costumer}"
+    <tr>
+        <td>${costumer.id} |</td>
+        <td>${costumer.firstName} |</td>
+        <td>${costumer.lastName} |</td>
+        <td>${contact.idcontact}</td>
+        <td>${contact.businessname}</td>
+        <td><a href="showUpdate?id=${costumer.id}">update |</a></td>
+        <td><a href="deleteLocations?id=${costumer.id}">delete</a></td>
+    </tr>
+    <%}%>
 </table>
+
 <a href="showCreate">Add Location</a>
 </body>
 </html>
