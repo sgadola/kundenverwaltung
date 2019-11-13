@@ -18,11 +18,13 @@ public interface LocationService {
     Address updateAddress(Address address);
     void deleteAddress(Address address);
     Address getAddressById(long id);
+    Address getAddressByfk( long id);
     List<Address> getAllAddress();
 
     Contact saveContact(Contact contact);
     Contact updateContact(Contact contact);
     void deleteContact(Contact contact);
     Contact getContactById(long id);
+    Contact getContactByfk( long id);
     List<Contact> getAllContact();
 }

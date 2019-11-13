@@ -18,22 +18,21 @@
         City: <input type="text" name="city" value="${address.city}"/>
         Businessname: <input type="text" name="businessname" value="${contact.businessname}"/>
         Value: <input type="text" name="value" value="${contact.value}"/>
-         Type: <select name="sort">
+         Type: <select name="sort" >
               <option value="privatePhone">privatePhone</option>
               <option value="businessPhone">businessPhone</option>
               <option value="mobile">mobile</option>
               <option value="fax">fax</option>
               <option value="email">email</option>
           </select>
-          Sort:  <select name="type">
+          Sort:  <select name="type" >
               <option value="PRIVATE">PRIVATE</option>
               <option value="BUSINESS">BUSINESS</option>
           </select>
         <input type="submit" value="save"/>
     </pre>
 </form>
-${msg}
 
-<a href="displayLocations">View All</a>
+<a href="displayCustomers">View All</a>
 </body>
 </html>

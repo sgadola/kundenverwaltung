@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
@@ -38,7 +39,7 @@ public class LocationController {
         return "createLocation";
     }
 
-    @RequestMapping("/displayLocations")
+    @RequestMapping("/displayCustomers")
     public String displayLocations(){
         return "testjoin";
     }
@@ -52,10 +53,10 @@ public class LocationController {
     }
 
     @RequestMapping("/showUpdate")
-    public String showUpdate(@RequestParam("id")long id, ModelMap modelMap, ModelMap modelMap1, ModelMap modelMap2) {
-        Contact contact = service.getContactById(id);
-        Address address = service.getAddressById(contact.getFkcostumer());
-        Costumer costumer = service.getLocationById(address.getFkCostumer());
+    public String showUpdate(@RequestParam("idaddress") long id, ModelMap modelMap, ModelMap modelMap1, ModelMap modelMap2) {
+        Costumer costumer = service.getLocationById(id);
+        Address address = service.getAddressByfk(id);
+        Contact contact = service.getContactByfk(id);
         modelMap.addAttribute("costumer", costumer);
         modelMap1.addAttribute("contact", contact);
         modelMap2.addAttribute("address", address);

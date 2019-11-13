@@ -76,6 +76,17 @@ public class LocationServiceImpl implements LocationService{
     }
 
     @Override
+    public Address getAddressByfk(long fk) {
+        List<Address> addresses = repositoryAdress.findAll();
+        for (Address address : addresses) {
+            if(address.getFkCostumer() == fk){
+                return address;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public List<Address> getAllAddress() {
         return repositoryAdress.findAll();
     }
@@ -98,6 +109,17 @@ public class LocationServiceImpl implements LocationService{
     @Override
     public Contact getContactById(long id) {
         return repositoryContact.getOne(id);
+    }
+
+    @Override
+    public Contact getContactByfk(long fk) {
+        List<Contact> contacts = repositoryContact.findAll();
+        for (Contact contact : contacts) {
+            if(contact.getFkcostumer() == fk){
+                return contact;
+            }
+        }
+        return null;
     }
 
     @Override

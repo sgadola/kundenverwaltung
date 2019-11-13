@@ -32,6 +32,6 @@
 </form>
 ${msg}
 
-<a href="displayLocations">View All</a>
+<a href="displayCustomers">View All</a>
 </body>
 </html>
