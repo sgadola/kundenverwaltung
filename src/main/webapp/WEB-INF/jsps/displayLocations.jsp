@@ -23,20 +23,17 @@
     </tr>
 
     <c:forEach items="${costumers}" var="costumer">
+        <tr>
+            <td>${costumer.id} |</td>
+            <td>${costumer.firstName} |</td>
+            <td>${costumer.lastName} |</td>
+            <td><a href="showUpdate?id=${costumer.id}">update |</a></td>
+            <td><a href="deleteLocations?id=${costumer.id}">delete</a></td>
+        </tr>
+    </c:forEach>
+    <c:forEach items="" var="">
 
     </c:forEach>
-    <%while (true){ %>
-    items="${costumer}"
-    <tr>
-        <td>${costumer.id} |</td>
-        <td>${costumer.firstName} |</td>
-        <td>${costumer.lastName} |</td>
-        <td>${contact.idcontact}</td>
-        <td>${contact.businessname}</td>
-        <td><a href="showUpdate?id=${costumer.id}">update |</a></td>
-        <td><a href="deleteLocations?id=${costumer.id}">delete</a></td>
-    </tr>
-    <%}%>
 </table>
 
 <a href="showCreate">Add Location</a>

@@ -53,7 +53,7 @@ public class LocationController {
     }
 
     @RequestMapping("/showUpdate")
-    public String showUpdate(@RequestParam("idaddress") long id, ModelMap modelMap, ModelMap modelMap1, ModelMap modelMap2) {
+    public String showUpdate(@RequestParam("id") long id, ModelMap modelMap, ModelMap modelMap1, ModelMap modelMap2) {
         Costumer costumer = service.getLocationById(id);
         Address address = service.getAddressByfk(id);
         Contact contact = service.getContactByfk(id);
@@ -64,11 +64,13 @@ public class LocationController {
     }
 
     @RequestMapping("/updateLoc")
-    public String saveLocations(@ModelAttribute("costumer") Costumer costumer, ModelMap modelMap){
+    public String saveLocations(
+                                @ModelAttribute("costumer") Costumer costumer,
+                                @ModelAttribute("address") Address address,
+                                @ModelAttribute("contact") Contact contact){
         service.updateLocation(costumer);
-        List<Costumer> costumers = service.getAllLocations();
-        modelMap.addAttribute("costumers", costumers);
+        service.saveAddress(address);
+        service.saveContact(contact);
         return "displayLocations";
     }
-
 }
